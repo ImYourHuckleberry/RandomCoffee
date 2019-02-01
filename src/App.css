@@ -1,32 +1,85 @@
+html { height: 100%; background-color: #3AAFA9; ;}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  display:flex;
+  text-align: left;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ 
+  
 }
-
+.blurb{
+  display:flex;
+  justify-content: right;
+  flex-direction: column;
+  padding:  20% 0 0 0
+}
+.App-header {
+  background-color: #2B7A77;
+  max-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: space-between;
+  font-size: calc(1vmin);
+  color: #FFFFFF;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+}
+.App-body{
+  margin-top: 40px;
+  background-color: #3AAFA9;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10%;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/50/Coffee-shop-circular-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%
+}
 .App-link {
-  color: #61dafb;
+  color: #FFFFFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+input[type=text] {
+  
+  padding: 15px 32px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #2B7A77;
+  background-color: #DEF2F1;
+}
+input[type=email] {
+  
+  padding: 15px 32px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #2B7A77;
+  background-color: #DEF2F1;
+}
+.inputfields{
+  display: flex;
+  flex-direction: column
+
+}
+.results{
+  display: flex;
+  font-size:20px;
+  justify-items: right;
+  padding:5% 0 5% 0 ;
+  flex-wrap: wrap
 }
